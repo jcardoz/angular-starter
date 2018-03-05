@@ -142,7 +142,7 @@ module.exports = {
       "./src/polyfills.ts"
     ],
     "styles": [
-      "./src/styles.css"
+      "./src/styles/styles.scss"
     ]
   },
   "output": {
@@ -175,7 +175,7 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.css$/,
         "use": [
@@ -199,7 +199,7 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.scss$|\.sass$/,
         "use": [
@@ -231,7 +231,7 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.less$/,
         "use": [
@@ -261,7 +261,7 @@ module.exports = {
       },
       {
         "exclude": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.styl$/,
         "use": [
@@ -292,7 +292,7 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.css$/,
         "use": [
@@ -316,7 +316,7 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.scss$|\.sass$/,
         "use": [
@@ -348,7 +348,7 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.less$/,
         "use": [
@@ -378,7 +378,7 @@ module.exports = {
       },
       {
         "include": [
-          path.join(process.cwd(), "src/styles.css")
+          path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.styl$/,
         "use": [
@@ -460,7 +460,7 @@ module.exports = {
       "showErrors": true,
       "chunks": "all",
       "excludeChunks": [],
-      "title": "Webpack App",
+      "title": "Angular Starter App",
       "xhtml": true,
       "chunksSortMode": function sort(left, right) {
         let leftIndex = entryPoints.indexOf(left.names[0]);
