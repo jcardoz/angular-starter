@@ -4,4 +4,16 @@
 export interface ServiceResponse {
     response: {};
     error?: {};
-  }
+}
+
+export interface BookResponse extends ServiceResponse {
+    response: {
+        books: (Book)[];
+    };
+}
+
+export interface Book {
+    id: number;
+    title: string;
+    author: string;
+}

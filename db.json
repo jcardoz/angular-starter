@@ -1,7 +1,7 @@
 {
-  "posts": {
+  "getBooks": {
     "response": {
-      "posts": [
+      "books": [
         {
           "id": 1,
           "title": "json-server",
