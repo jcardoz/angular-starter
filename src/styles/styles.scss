@@ -1,6 +1,7 @@
+@import './base/variables.scss';
 @import './base/fonts.scss';
-
-body {
+h1 {
     // Font fallbacks
     font-family: 'Fira Sans Light', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    color: $black;
 }

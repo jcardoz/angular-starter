@@ -142,6 +142,7 @@ module.exports = {
       "./src/polyfills.ts"
     ],
     "styles": [
+      "./src/styles/base/bootstrap-styles.scss",
       "./src/styles/styles.scss"
     ]
   },
@@ -175,6 +176,7 @@ module.exports = {
       },
       {
         "exclude": [
+          path.join(process.cwd(), "src/styles/base/bootstrap-styles.scss"),
           path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.css$/,
@@ -199,6 +201,7 @@ module.exports = {
       },
       {
         "exclude": [
+          path.join(process.cwd(), "src/styles/base/bootstrap-styles.scss"),
           path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.scss$|\.sass$/,
@@ -231,6 +234,7 @@ module.exports = {
       },
       {
         "exclude": [
+          path.join(process.cwd(), "src/styles/base/bootstrap-styles.scss"),
           path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.less$/,
@@ -261,6 +265,7 @@ module.exports = {
       },
       {
         "exclude": [
+          path.join(process.cwd(), "src/styles/base/bootstrap-styles.scss"),
           path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.styl$/,
@@ -292,6 +297,7 @@ module.exports = {
       },
       {
         "include": [
+          path.join(process.cwd(), "src/styles/base/bootstrap-styles.scss"),
           path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.css$/,
@@ -316,6 +322,7 @@ module.exports = {
       },
       {
         "include": [
+          path.join(process.cwd(), "src/styles/base/bootstrap-styles.scss"),
           path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.scss$|\.sass$/,
@@ -348,6 +355,7 @@ module.exports = {
       },
       {
         "include": [
+          path.join(process.cwd(), "src/styles/base/bootstrap-styles.scss"),
           path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.less$/,
@@ -378,6 +386,7 @@ module.exports = {
       },
       {
         "include": [
+          path.join(process.cwd(), "src/styles/base/bootstrap-styles.scss"),
           path.join(process.cwd(), "src/styles/styles.scss")
         ],
         "test": /\.styl$/,

@@ -1,17 +1,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}
-  </h1>
-  <img width="300" src="./assets/images/AngularImage.png" alt="Angular Logo">
+<div class="container-fluid">
+  <div style="text-align:center">
+    <h1>
+      Welcome to {{ title }}
+    </h1>
+    <h1>Example heading <span class="badge badge-secondary">New</span> </h1>
+
+    <img width="300" src="./assets/images/AngularImage.png" alt="Angular Logo">
+  </div>
+
+  <ul *ngIf="books">
+    <li *ngFor="let book of books">{{book.title}} by {{book.author}}</li>
+  </ul>
+
+  <a routerLink="/" routerLinkActive="active">Home</a>
+  <a routerLink="/login" routerLinkActive="active">Login</a>
+
+  <router-outlet></router-outlet>
 </div>
-
-<ul *ngIf="books">
-<li *ngFor="let book of books">{{book.title}} by {{book.author}}</li>
-</ul>
-
-<a routerLink="/" routerLinkActive="active">Home</a>
-<a routerLink="/login" routerLinkActive="active">Login</a>
-
-<router-outlet></router-outlet>
-
