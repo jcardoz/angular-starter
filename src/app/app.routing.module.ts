@@ -19,7 +19,12 @@ const appRoutes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
-  }
+  },
+  // Register
+  {
+    path: 'register',
+    loadChildren: './register/register.module#RegisterModule'
+  },
 ];
 // End Routes
 
