@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "webpack-dev-server --port=4200",
+    "start": "ng lint && webpack-dev-server --port=4200",
     "build": "webpack",
     "test": "karma start ./karma.conf.js",
     "lint": "ng lint",
@@ -70,6 +70,7 @@
     "url-loader": "^0.6.2",
     "circular-dependency-plugin": "^4.2.1",
     "copy-webpack-plugin": "^4.1.1",
-    "uglifyjs-webpack-plugin": "^1.1.5"
+    "uglifyjs-webpack-plugin": "^1.1.5",
+    "stylelint": "^8.2.0"
   }
 }
