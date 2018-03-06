@@ -9,6 +9,7 @@ const autoprefixer = require('autoprefixer');
 const postcssUrl = require('postcss-url');
 const cssnano = require('cssnano');
 const postcssImports = require('postcss-import');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 const { NoEmitOnErrorsPlugin, SourceMapDevToolPlugin, NamedModulesPlugin } = require('webpack');
 const { NamedLazyChunksWebpackPlugin, BaseHrefWebpackPlugin } = require('@angular/cli/plugins/webpack');
@@ -486,6 +487,14 @@ module.exports = {
     }
     }),
     new BaseHrefWebpackPlugin({}),
+    new StyleLintPlugin({
+      'configFile': './.stylelintrc',
+      'failOnError': true,
+      'emitErrors': true,
+      'files': ['**/*.s?(a|c)ss'],
+      'syntax': 'scss',
+      'quiet': false
+    }),
     new CommonsChunkPlugin({
       "name": [
         "inline"
